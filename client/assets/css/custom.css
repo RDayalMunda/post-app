@@ -1,0 +1,10 @@
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.disable {
+    pointer-events: none;
+}
+.capitalize {
+    text-transform: capitalize;
+}
