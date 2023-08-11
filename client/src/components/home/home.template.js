@@ -1,7 +1,7 @@
 export default /*html*/`
 
 <div>
-    <h1>HOME page</h1>
+    <h1>hOME page</h1>
 </div>
 
 `
