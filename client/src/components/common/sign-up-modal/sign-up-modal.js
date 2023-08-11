@@ -19,8 +19,7 @@ export default {
             try{
                 let { data } = await api.post('/user', userData.value)
                 if (data.success){
-                    console.log(error)
-                    modal.close()
+                    modal.hide()
                 }
                 alert(data.message)
             }catch(err){
