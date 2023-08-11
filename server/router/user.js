@@ -5,6 +5,13 @@ router.post("", userController.createNewUser) // adding 1 user
 // router.put("") // updating 1 user
 // router.get("") // getting 1 user
 router.post("/sign-in", userController.signIn)
+router.get("/test-user", (req,res)=>{
+    try{
+        res.status(200).send({"message": "Working correctly"})
+    }catch(err){
+        res.status(500).send({"message": "Error"})
+    }
+})
 
 
 
