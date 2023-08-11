@@ -28,6 +28,41 @@ export default /*html*/`
                     <label for="sign-up-last-name">Last Name</label>
                 </div>
 
+                <ol class="list-group mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="form-check">
+                                <input v-model="userData.gender" class="form-check-input" type="radio" name="sign-up-gender" id="sign-up-gender-male"
+                                    value="M">
+                                <label class="form-check-label" for="sign-up-gender-male">Male</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="form-check">
+                                <input v-model="userData.gender" class="form-check-input" type="radio" name="sign-up-gender" id="sign-up-gender-female"
+                                    value="F">
+                                <label class="form-check-label" for="sign-up-gender-female">Female</label>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                        <div class="ms-2 me-auto">
+                            <div class="form-check">
+                                <input v-model="userData.gender" class="form-check-input" type="radio" name="sign-up-gender" id="sign-up-gender-others"
+                                    value="O">
+                                <label class="form-check-label" for="sign-up-gender-others">Others</label>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+
+                
+                
+                
+
+
                 <div class="form-floating mb-3">
                     <input v-model="userData.email" type="email" class="form-control" id="sign-up-email"
                         placeholder="name@example.com">
@@ -47,7 +82,7 @@ export default /*html*/`
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                 <button @click="createNewuser" type="button" class="btn btn-primary">Create</button>
-                
+
             </div>
         </div>
     </div>

@@ -8,7 +8,7 @@ let collectionSchema = new mongoose.Schema(
         gender: { type: String, required: true },
         email: { type: String, unique: true, required: true},
         phone: { type: Number, unique: true, required: true},
-        dob: { type: Date, required: true},
+        // dob: { type: Date, required: true},
         isActive: { type: Boolean, default: false },
     },
     { timestamps: true }

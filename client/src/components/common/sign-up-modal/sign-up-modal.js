@@ -5,7 +5,7 @@ const { useRouter } = VueRouter;
 export default {
     name: "sign-up-modal",
     setup(){
-        function userReset(){ return { firstName: "", middleName: "", lastName: "", email: "", phone: "", password: "" } }
+        function userReset(){ return { firstName: "", middleName: "", lastName: "", gender: "M", dob: "", email: "", phone: "", password: "" } }
         let userData = ref( userReset() )
         let modal = null
         let router = useRouter();
